@@ -1,0 +1,44 @@
+# Visual Studio / MSBuild build artifacts
+.vs/
+bin/
+obj/
+Debug/
+Release/
+x64/
+ipch/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.ipch
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.exe
+*.obj
+*.o
+*.log
+
+# Node
+node_modules/
+
+# Archives / media / office documents (excluded from this repo)
+*.rar
+*.zip
+*.7z
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.mkv
+*.mp4
+*.avi
+*.mov
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.xlsx
