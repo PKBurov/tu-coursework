@@ -1,0 +1,29 @@
+int ch;
+	int flag1 = false;
+	int max = -214700000;
+	int min = 2147000000;
+	int i = 0;
+	int number_m = 0;
+	char all_s[10] = { '0','1','2','3','4','5','6','7','8','9' };
+
+	while( (ch = fgetc(fp_in)) != EOF)
+	{
+		if (ch == ' ')
+		{
+			flag1 = true;
+		}
+		if ( isdigit(ch) && flag1 == false )
+		{
+			printf("%c", ch);
+		}
+		printf(" ");
+		flag1 = false;
+			//if (number_m < min)
+				//min = number_m;
+			
+			//if (number_m > max)
+				//max = number_m;
+		
+	}
+	//printf("Biggest number is: %d\n", max); // Принтира правилно но в аски код, и също така не разбирам как да чета голямо число, като например 5555 или нещо такова.Освен с флагове и без запис в масив. как??
+	//printf("Lowest number is: %d\n", min); //prints
