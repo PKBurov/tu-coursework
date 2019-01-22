@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1549419955 source:c:\users\kbt\desktop\kursova\kursova5\main.c
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+
