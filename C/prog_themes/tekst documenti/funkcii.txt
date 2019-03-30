@@ -1,0 +1,53 @@
+float average_of_numbers(FILE *fp_in)
+{
+	int n = 0, S = 0, num = 0, overflow;
+	char str[100];
+	while (fscanf(fp_in, "%s", str) != EOF)
+	{
+		num = atoi(str);
+		if (errno == 34)
+		{
+			printf("\n Препълване при четене!");
+			system("pause");
+			exit(1);
+		}
+		S = sum_average(S, num, &overflow);
+		if (overflow == 1)
+		{
+			printf("\n Препълване при добавяне!");
+			system("pause");
+			exit(1);
+		}
+		n++;
+	}
+	if (ferror(fp_in))
+	{
+		printf("Грешка при четене!");
+		system("pause");
+		exit(1);
+	}
+
+	return (float)S / n;
+}
+
+
+int sum_average(int S, int num, int *overflow)
+{
+
+	int no_overflow = 1;
+	S = S + num;
+	_asm
+	{
+		jno NO_OVERFLOW
+		mov no_overflow, 0
+		NO_OVERFLOW:
+	}
+	if (no_overflow == 0)
+	{
+		*overflow = 1;
+	}
+	else
+		*overflow = 0;
+	return S;
+}
+
