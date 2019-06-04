@@ -1,0 +1,11 @@
+#pragma once
+struct cars {
+	char ID[20];
+	char color[50];
+	double ob;
+	char brand[20];
+	double price;
+	struct cars*next;
+};
+struct cars *head = NULL;
+struct cars *current = NULL;
