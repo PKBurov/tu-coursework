@@ -18,7 +18,7 @@ academic year **2018–2019**. Personal archive of **Petar Burov**.
 
 ## Notes
 
-- Commit dates are backdated to the original dates of the exercises, taken from
-  the exercise folder names (e.g. `05.04.2019`, `29_03_2019`).
+- The commit history was reconstructed afterwards: commits are backdated and spread across the
+  2018–2019 academic year (a folder named with a date keeps that date), so the dates are approximate.
 - Build artifacts, binaries, archives, images, videos, Word documents and
   personal files have been excluded. See `.gitignore`.
